@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get 'welcome' => 'pages#welcome'
   get 'welcome1' => 'pages#home'
   get 'portfolio' => 'pages#portfolio'
+  get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
 end

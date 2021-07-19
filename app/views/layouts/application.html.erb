@@ -15,11 +15,19 @@
   </head>
 
   <body>
-    <div class="header">Nav
-    <%= link_to 'Welcome', "welcome" %> 
-    <%= link_to 'Portfolio', "portfolio" %> 
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li><%= link_to 'Welcome', "welcome" %></li>
+          <li><%= link_to 'Portfolio', "portfolio" %></li>
+          <li><%= link_to 'About', "about" %></li>
+          <li><%= link_to 'Contact', "contact" %></li>
+        </ul>
+      </div>
     </div>
-    <%= yield %>
+    <div class="jumbotron">
+      <%= yield %>
+    </div>
     <div class="footer">
       <div class="container">
         <div class="row">
